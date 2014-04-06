@@ -67,9 +67,11 @@ body {
     margin-right: 3px;
 }
 
+/*
 a, a:hover {
     color: inherit;
 }
+*/
 
 .entry-content a {
     text-decoration: none;
@@ -84,6 +86,8 @@ a, a:hover {
 .entry-content img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: auto;
 }
 
 .entry-content figcaption, .caption {
