@@ -1,6 +1,12 @@
 {% if DISPLAY_TAGS_ON_SIDEBAR is not defined %}
     {% set DISPLAY_TAGS_ON_SIDEBAR = True %}
 {% endif %}
+{% if CATEGORIES_SAVE_AS is not defined %}
+    {% set CATEGORIES_SAVE_AS = "categories.html" %}
+{% endif %}
+{% if TAGS_SAVE_AS is not defined %}
+    {% set TAGS_SAVE_AS = "tags.html" %}
+{% endif %}
 
 <aside>
     <section>
