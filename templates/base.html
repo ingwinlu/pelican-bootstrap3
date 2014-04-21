@@ -147,8 +147,10 @@
         </div>
 	{% endif %}
 	{% if not HIDE_SIDEBAR %}
-        <div class="col-sm-3 well well-sm" id="sidebar">
+        <div class="col-sm-3 panel panel-default" id="sidebar">
+          <div class="panel-body">
             {% include 'includes/sidebar.html' %}
+          </div>
         </div>
 	{% endif %}
     </div>

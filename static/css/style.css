@@ -1,5 +1,14 @@
+html { 
+
+}
+
 body {
     padding-top: 70px;
+    background: url(/images/3424524099_dc78488b95_o.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #sidebar .list-group, #sidebar .list-group-item {
@@ -160,4 +169,8 @@ figure.floatcenter, .align-center {
 
 .tagcloud li {
     padding: 0px;
+}
+
+.panel-body > h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child {
+    margin-top: 0px;
 }

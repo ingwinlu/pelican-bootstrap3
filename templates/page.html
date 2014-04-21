@@ -12,16 +12,20 @@
 
 {% block content %}
     <section id="content" class="body">
-        <h1 class="entry-title">{{ page.title }}</h1>
-        {% import 'includes/translations.html' as translations with context %}
-        {{ translations.translations_for(page) }}
-        {% if PDF_PROCESSOR %}
-            <a href="{{ SITEURL }}/pdf/{{ page.slug }}.pdf">
-                get the pdf
-            </a>
-        {% endif %}
-        <div class="entry-content">
-            {{ page.content }}
+      <div class="panel panel-default">
+        <div class="panel-body">
+            <h1 class="entry-title">{{ page.title }}</h1>
+            {% import 'includes/translations.html' as translations with context %}
+            {{ translations.translations_for(page) }}
+            {% if PDF_PROCESSOR %}
+                <a href="{{ SITEURL }}/pdf/{{ page.slug }}.pdf">
+                    get the pdf
+                </a>
+            {% endif %}
+            <div class="entry-content">
+                {{ page.content }}
+            </div>
         </div>
+      </div>
     </section>
 {% endblock %}
