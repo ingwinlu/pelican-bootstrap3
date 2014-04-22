@@ -181,3 +181,7 @@ figure.floatcenter, .align-center {
 .pager {
     margin: 0px;
 }
+
+.post-info{
+    overflow: hidden;
+}
