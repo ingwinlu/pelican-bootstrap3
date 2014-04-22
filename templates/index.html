@@ -4,24 +4,22 @@
         {% for article in (articles_page.object_list if articles_page else articles) %}
             <article>
                 <div class="panel panel-default">
-                  <a href="{{ SITEURL }}/{{ article.url }}" class="list-group-item">
-                    <div class="panel-body">
-                            <h2>{{ article.title }}</h2>
-                            {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
-                                <div class="panel">
-                                  <div class="panel-body">
-                                    {% include "includes/article_info.html" %}
-                                  </div>
-                                </div>
-                            {% endif %}
-                            <div class="summary">{{ article.summary }}
-                                {% include 'includes/comment_count.html' %}
-                                {% if not HIDE_MORE_BUTTON %}
-                                <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
-                                {% endif %}
-                            </div>
+                    <div class="panel-heading">
+                      {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
+                        {% include "includes/article_info.html" %}
+                      {% endif %}
                     </div>
-                  </a>
+                    <a href="{{ SITEURL }}/{{ article.url }}" class="list-group-item">
+                        <div class="panel-body">
+                                <h2>{{ article.title }}</h2>
+                                <div class="summary">{{ article.summary }}
+                                    {% include 'includes/comment_count.html' %}
+                                    {% if not HIDE_MORE_BUTTON %}
+                                    <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
+                                    {% endif %}
+                                </div>
+                        </div>
+                    </a>
                 </div>
             </article>
         {% endfor %}
