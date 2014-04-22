@@ -4,7 +4,7 @@
 {% block breadcrumbs %}
     {% if DISPLAY_BREADCRUMBS %}
         {% if DISPLAY_CATEGORY_IN_BREADCRUMBS %}
-            <ol class="breadcrumb">
+            <ol class="breadcrumb panel panel-default">
                 <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
                 <li><a href="{{ SITEURL }}/{{ article.category.url }}" title="{{ article.category }}">{{ article.category }}</a></li>
                 <li class="active">{{ article.title }}</li>
