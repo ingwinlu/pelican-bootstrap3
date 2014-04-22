@@ -93,6 +93,10 @@ You can choose the syntax highlighting style by using the `PYGMENTS_STYLE` varia
 
 For a demo of the different Pygment styles, have a look [here](http://pygments.org/demo/218030/)
 
+### Pagination
+
+Pelican-Bootstrap3 follows the standard Pagination settings of Pelican and uses the Bootstrap3 [Pagination component](http://getbootstrap.com/components/#pagination), but you can optionally use the Boostrap3 _Pager_ by setting `USE_PAGER` to `True`.
+
 ### Site Brand
 
 You can provide a logo for your site using `SITELOGO`. For example: `SITELOGO = 'images/my_site_logo.png'`. You can then define the size of the logo using `SITELOGO_SIZE`. The `width` of the `<img>` element will be set accordingly.
@@ -154,6 +158,7 @@ If you're using reStructuredText for writing articles and pages, you can include
 
 * This theme sets identifiers for each article's comment threads. If you are switching from a theme that doesn't (such as the Pelican built-in default) this will result in existing comments getting lost. To prevent this, set DISQUS_NO_ID to _True_.
 * Set DISQUS_ID_PREFIX_SLUG to _True_ if you have configured your article URLs such that the slug alone will likely not be unique. Ignored if DISQUS_NO_ID is _True_.
+* You can also enable Disqus comments for pages. This is a per-page setting you can control by adding a field `comments` to you pages' metadata. Set it to _enabled_ to enable comments for that page. Comment-threads for pages will have an id that is prefixed by 'page-'.
 * To show Disqus comment counts on the index page, set DISQUS_DISPLAY_COUNTS to _True_.
 
 ### Content license
