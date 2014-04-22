@@ -175,3 +175,7 @@ figure.floatcenter, .align-center {
     margin-top: 0px;
 }
 
+.panel {
+    border: 4px;
+    border-radius: 4px;
+}
