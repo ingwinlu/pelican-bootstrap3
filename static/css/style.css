@@ -66,6 +66,10 @@ body {
     color: inherit;
 }
 
+article a.list-group-item {
+    color: inherit;
+}
+
 .icon-label {
     margin-left: 10px;
 }
