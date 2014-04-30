@@ -4,8 +4,8 @@
   {% set copy_date = '' %}
 {% endif %}
 
-<footer>
-    <nav id="statusbar-bottom" class="navbar navbar-default navbar-fixed-bottom hidden-xs" role="navigation">
+<footer class="hidden-xs">
+    <nav id="statusbar-bottom" class="navbar navbar-default navbar-fixed-bottom" role="navigation">
         <div class="container">
             <p class="navbar-text">
                 {{ SITESUBTITLE }}
@@ -21,8 +21,7 @@
     </nav>
 </footer>
 
-{# not used while testing navbar footer
-<footer>
+<footer class="visible-xs">
    <div class="container">
       <hr>
       <div class="row">
@@ -44,4 +43,3 @@
        </div>
    </div>
 </footer>
-#}
