@@ -1,12 +1,31 @@
+{% if articles %}
+  {% set copy_date = articles[0].date.strftime('%Y') %}
+{% else %}
+  {% set copy_date = '' %}
+{% endif %}
+
+<footer>
+    <nav id="statusbar-bottom" class="navbar navbar-default navbar-fixed-bottom hidden-xs" role="navigation">
+        <div class="container">
+            <p class="navbar-text">
+                {{ SITESUBTITLE }}
+            </p>
+            <p class="navbar-text navbar-right"><small>
+                &copy; {{ copy_date }} {{ AUTHOR }}
+                &middot; Powered by 
+                <a class="navbar-link" href="https://github.com/ingwinlu/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                <a class="navbar-link" href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                <a class="navbar-link" href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+            </small></p>
+        </div>
+    </nav>
+</footer>
+
+{# not used while testing navbar footer
 <footer>
    <div class="container">
       <hr>
       <div class="row">
-         {% if articles %}
-            {% set copy_date = articles[0].date.strftime('%Y') %}
-         {% else %}
-            {% set copy_date = '' %}
-         {% endif %}
          <div class="col-xs-12">
             <div class="panel panel-default">
               <div class = "panel-body">
@@ -25,3 +44,4 @@
        </div>
    </div>
 </footer>
+#}
