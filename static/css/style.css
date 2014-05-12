@@ -226,3 +226,6 @@ figure.floatcenter, .align-center {
     margin-bottom: 0px;
     line-height: 20px; 
 } 
+
+/*Black out code background more*/
+.highlight pre, .highlighttable pre { background: black; color: #d0d0d0 }
