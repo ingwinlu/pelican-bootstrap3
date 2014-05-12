@@ -229,3 +229,6 @@ figure.floatcenter, .align-center {
 
 /*Black out code background more*/
 .highlight pre, .highlighttable pre { background: black; color: #d0d0d0 }
+
+/*Wrap text wrapped in '`'*/
+code { white-space: normal}
