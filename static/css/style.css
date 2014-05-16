@@ -6,6 +6,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: black; /*better readability with opacity background*/
 }
 
 @media (min-width: 768px){
