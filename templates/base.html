@@ -131,7 +131,7 @@
 <div class="container">
     <div class="row">
         {% if not HIDE_SIDEBAR or SHOW_ABOUTME %}
-        <div class="col-sm-9">
+        <div class="col-md-9">
         {% else %}
         <div class="col-lg-12">
         {% endif %}
@@ -142,12 +142,12 @@
         {% endblock %}
         </div>
     {% if ABOUT_ME %}
-        <div class="col-sm-3" id="aboutme">
+        <div class="col-md-3" id="aboutme">
             {% include 'includes/aboutme.html' %}
         </div>
     {% endif %}
     {% if not HIDE_SIDEBAR %}
-        <div class="col-sm-3" id="sidebar">
+        <div class="col-md-3" id="sidebar">
             {% include 'includes/sidebar.html' %}
         </div>
     {% endif %}
