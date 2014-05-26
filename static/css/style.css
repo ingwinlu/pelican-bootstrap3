@@ -233,3 +233,23 @@ figure.floatcenter, .align-center {
 
 /*Wrap text wrapped in '`'*/
 code { white-space: normal}
+
+/*Additions for sticky footer*/
+html, body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -36px;
+}
+
+/* Set the fixed height of the footer here */
+#push, #pagefooter {
+    height: 36px;
+}
